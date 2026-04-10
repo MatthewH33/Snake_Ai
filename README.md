@@ -6,7 +6,7 @@ The main entry script is `Minesweeper.py` (historical filename).
 
 ## Demo
 
-![Live overlay and HUD](docs/demo.png)
+![Live overlay and HUD](Demo.png)
 
 ## Requirements
 
