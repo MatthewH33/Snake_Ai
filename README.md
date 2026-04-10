@@ -4,6 +4,10 @@ Python tool that captures a fixed region of your screen, reads the **Google Mine
 
 The main entry script is `Minesweeper.py` (historical filename).
 
+## Demo
+
+![Live overlay and HUD](docs/demo.png)
+
 ## Requirements
 
 - **Python 3.10+** (uses modern type hints)
