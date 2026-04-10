@@ -2,7 +2,7 @@
 
 Python tool that captures a fixed region of your screen, reads the **Google Minesweeper** grid with **OpenCV** (HSV color masks), runs a **constraint-based solver** (`google_minesweeper_solver.py`), and shows **safe / flag** suggestions on a live overlay and HUD.
 
-The main entry script is `Snake.py` (historical filename).
+The main entry script is `Minesweeper.py` (historical filename).
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Dependencies: `mss`, `numpy`, `opencv-python`, `PyAutoGUI` (listed for the proje
 ## Run
 
 ```bash
-python Snake.py
+python Minesweeper.py
 ```
 
 A window opens with:
@@ -48,7 +48,7 @@ Overlay labels: **S** = safe (reveal), **F** = flag.
 
 ## Configure capture and grid
 
-Edit `main()` in `Snake.py`:
+Edit `main()` in `Minesweeper.py`:
 
 - **`monitor_region`** — `left`, `top`, `width`, `height` passed to `mss` (must frame the game board tightly).
 - **`grid_cols`**, **`grid_rows`** — must match the visible mine grid (default **10×8** in code).
@@ -63,7 +63,7 @@ The solver module can be run from the command line with a manual board string; s
 
 | File | Role |
 |------|------|
-| `Snake.py` | Screen grab, grid split, CV classification, HUD, overlay |
+| `Minesweeper.py` | Screen grab, grid split, CV classification, HUD, overlay |
 | `google_minesweeper_solver.py` | Board model, `solve()`, CLI |
 | `requirements.txt` | Python dependencies |
 
