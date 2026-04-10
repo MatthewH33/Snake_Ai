@@ -1,4 +1,4 @@
-# Minesweeper — Google Minesweeper screen assistant
+# Minesweeper - Google Minesweeper screen assistant
 
 Python tool that captures a fixed region of your screen, reads the **Google Minesweeper** grid with **OpenCV** (HSV color masks), runs a **constraint-based solver** (`google_minesweeper_solver.py`), and shows **safe / flag** suggestions on a live overlay and HUD.
 
